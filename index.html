@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedPrep - Free Medical Resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <a href="#" class="text-2xl font-bold text-blue-700 flex items-center">
+            <i class="fas fa-heartbeat mr-2"></i>MedPrep
+        </a>
+        <div class="hidden md:flex space-x-8">
+            <a href="#courses" class="text-gray-700 hover:text-blue-600 font-medium">Courses</a>
+            <a href="#store" class="text-gray-700 hover:text-blue-600 font-medium">Store</a>
+            <a href="#resources" class="text-gray-700 hover:text-blue-600 font-medium">Resources</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        </div>
+        <button class="md:hidden text-2xl">☰</button>
+    </nav>
+
+    <!-- Hero Section (Like Anuj's) -->
+    <section class="hero-bg text-white py-24 px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Medical Education Made Accessible</h1>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">Free MBBS lectures, MRCS & UKMLA preparation resources created by medical students for medical students</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#courses" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg">Explore Courses</a>
+            <a href="#store" class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-3 rounded-full font-bold text-lg">Visit Store</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Free Medical Courses</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Completely free lecture series covering all MBBS subjects and exam preparation</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Anatomy Course -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover transition-all">
+                    <div class="p-6">
+                        <div class="bg-blue-100 text-blue-800 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-lungs text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Anatomy</h3>
+                        <p class="text-gray-600 mb-4">Complete Gross Anatomy lecture series with dissection videos</p>
+                        <a href="anatomy.html" class="text-blue-600 font-bold flex items-center">
+                            Access Lectures <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Add more course cards here following same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store" class="py-16 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Study Resources Store</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Premium notes, books, and study guides curated for medical students</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Product 1 -->
+                <div class="border rounded-lg p-6 flex">
+                    <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold">MRCS Part A Notes</h3>
+                        <p class="text-gray-600 my-2">Comprehensive revision notes covering all topics</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-blue-600">₹499</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-bold">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">MedPrep</h3>
+                <p class="text-gray-400">Medical education resources created by students for students</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                    <li><a href="#courses" class="text-gray-400 hover:text-white">Courses</a></li>
+                    <li><a href="#store" class="text-gray-400 hover:text-white">Store</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Exams</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">MBBS Curriculum</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">MRCS Preparation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">UKMLA Resources</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center text-gray-400"><i class="fas fa-envelope mr-2"></i> contact@medprep.com</li>
+                    <li class="flex items-center text-gray-400"><i class="fab fa-whatsapp mr-2"></i> +91 XXXXX XXXXX</li>
+                </ul>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+            <p>© 2023 MedPrep. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
